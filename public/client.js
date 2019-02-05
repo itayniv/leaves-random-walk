@@ -47,6 +47,12 @@ window.addEventListener('load', function() {
     // console.log(leaves);
     loaded = true;
   });
+
+  buttonToggle2 = true;
+  buttonToggle1 = true;
+
+
+
 })
 
 
