@@ -4,8 +4,6 @@
 console.log('hello world :o');
 
 
-
-
 let leaves = [];
 let leave = -1;
 // let data = [];
@@ -65,6 +63,8 @@ sliderX.oninput = function() {
   locationVector[0] = controllerSliderX;
   locationVector[1] = controllerSliderY;
 
+  document.getElementById("vector01").innerHTML = this.value;
+
   findClosestLeave(locationVector);
 
 }
@@ -75,6 +75,9 @@ sliderY.oninput = function() {
   controllerSliderY = this.value;
   locationVector[0] = controllerSliderX;
   locationVector[1] = controllerSliderY;
+
+  document.getElementById("vector02").innerHTML = this.value;
+
   findClosestLeave(locationVector);
 
 }
